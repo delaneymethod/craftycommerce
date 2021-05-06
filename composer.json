@@ -1,0 +1,26 @@
+{
+  "require": {
+    "craftcms/cms": "^3.6.4",
+    "craftcms/commerce": "3.3.1",
+    "craftcms/feed-me": "^4.2.3",
+    "verbb/postie": "2.4.7",
+    "vlucas/phpdotenv": "^3.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}

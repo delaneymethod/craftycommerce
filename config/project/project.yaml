@@ -1,0 +1,37 @@
+dateModified: 1620307189
+email:
+  fromEmail: hello@delaneymethod.com
+  fromName: 'Crafty Commerce'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    command: ''
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  commerce:
+    edition: pro
+    enabled: true
+    licenseKey: D5RZVHK3FHLQCSDIC9NYHMRZ
+    schemaVersion: 3.3.2
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.2
+  postie:
+    edition: standard
+    enabled: true
+    licenseKey: 4XA0WCFAJL1J9UFB0F5XTSQ5
+    schemaVersion: 2.1.0
+system:
+  edition: pro
+  live: true
+  name: 'Crafty Commerce'
+  retryDuration: null
+  schemaVersion: 3.6.8
+  timeZone: Europe/Dublin
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

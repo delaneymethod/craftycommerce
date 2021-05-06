@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: en-GB
+name: 'Crafty Commerce'
+primary: true
+siteGroup: 7675e13b-31b4-40d1-8025-a37fd35fb97f # Crafty Commerce
+sortOrder: 1
