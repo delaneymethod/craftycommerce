@@ -28,12 +28,17 @@
 	{% if showShippingMethod %}
 		<div class="border-b border-gray-300 pb-3">
 			<h4 class="font-semibold mt-3">Shipping method</h4>
-			<div>
-				{% if cart.shippingMethod %}
-					{{ cart.shippingMethod.name }}
-				{% else %}
-					No shipping method selected.
-				{% endif %}
+			<div class="flex w-full justify-between">
+				<div class="flex justify-between mr-3 overflow-hidden items-center">
+					{% if cart.shippingMethod %}
+						{{ cart.shippingMethod.name }}
+					{% else %}
+						No shipping method selected.
+					{% endif %}
+				</div>
+				<div>
+					{{ cart.totalShippingCost|commerceCurrency(cart.currency) }}
+				</div>
 			</div>
 		</div>
 	{% endif %}
@@ -61,14 +66,14 @@
 		</div>
 	{% endif %}
 	<div class="mt-3 pt-3 border-t border-gray-300">
-		<div class="flex w-full justify-end items-center text-xs text-gray-500">
+		{#<div class="flex w-full justify-end items-center text-xs text-gray-500">
 			<div class="pr-2">
 				Shipping:
 			</div>
 			<div>
 				{{ cart.totalShippingCost|commerceCurrency(cart.currency) }}
 			</div>
-		</div>
+		</div>#}
 		<div class="flex w-full justify-end items-center text-xs text-gray-500">
 			<div class="pr-2">
 				Tax:
