@@ -37,8 +37,12 @@ return [
 		// Whether crawlers should be allowed to index pages and following links
 		'disallowRobots' => !$isProd,
 
+		// Whether to enable template caching on a global basis.
+		'enableTemplateCaching' => $isProd,
+
 		'aliases' => [
-			'@userPhotos' => 'userphotos',
+			'@userPhotos' => 'images/userPhotos',
+			'@coffeeBeans' => 'images/shop/coffeeBeans',
 		],
 	],
 

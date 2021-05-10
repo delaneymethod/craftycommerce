@@ -1,4 +1,4 @@
-dateModified: 1620307189
+dateModified: 1620403655
 email:
   fromEmail: hello@delaneymethod.com
   fromName: 'Crafty Commerce'
@@ -13,15 +13,790 @@ plugins:
     enabled: true
     licenseKey: D5RZVHK3FHLQCSDIC9NYHMRZ
     schemaVersion: 3.3.2
-  feed-me:
+    settings:
+      activeCartDuration: 3600
+      allowCheckoutWithoutPayment: false
+      allowEmptyCartOnCheckout: false
+      allowPartialPaymentOnCheckout: false
+      autoSetNewCartAddresses: true
+      cartVariable: cart
+      defaultView: commerce/orders
+      dimensionUnits: mm
+      emailSenderAddress: hello@delaneymethod.com
+      emailSenderAddressPlaceholder: null
+      emailSenderName: 'Crafty Commerce'
+      emailSenderNamePlaceholder: null
+      freeOrderPaymentStrategy: complete
+      gatewayPostRedirectTemplate: ''
+      loadCartRedirectUrl: null
+      minimumTotalPriceStrategy: default
+      orderPdfFilenameFormat: 'Order-{number}'
+      orderPdfPath: shop/special/receipt
+      orderReferenceFormat: '{{number[:7]}}'
+      paymentCurrency: null
+      pdfAllowRemoteImages: false
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      purgeInactiveCarts: true
+      purgeInactiveCartsDuration: 7776000
+      requireBillingAddressAtCheckout: false
+      requireShippingAddressAtCheckout: false
+      requireShippingMethodSelectionAtCheckout: false
+      showCustomerInfoTab: true
+      updateBillingDetailsUrl: ''
+      updateCartSearchIndexes: true
+      useBillingAddressForTax: false
+      validateBusinessTaxIdAsVatId: false
+      validateCartCustomFieldsOnSubmission: false
+      weightUnits: g
+  fireclaytile-pacejet:
     edition: standard
     enabled: true
-    schemaVersion: 2.1.2
+    schemaVersion: 1.0.0
   postie:
     edition: standard
     enabled: true
     licenseKey: 4XA0WCFAJL1J9UFB0F5XTSQ5
     schemaVersion: 2.1.0
+    settings:
+      displayDebug: false
+      displayErrors: false
+      displayFlashErrors: false
+      enableCaching: true
+      fetchRatesPostValue: postie-fetch-rates
+      hasCpSection: '1'
+      manualFetchRates: false
+      pluginName: Postie
+      providers:
+        __assoc__:
+          -
+            - australiaPost
+            -
+              __assoc__:
+                -
+                  - name
+                  - 'Australia Post'
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - apiKey
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - bring
+            -
+              __assoc__:
+                -
+                  - name
+                  - Bring
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - username
+                        - ''
+                      -
+                        - apiKey
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - g
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - canadaPost
+            -
+              __assoc__:
+                -
+                  - name
+                  - 'Canada Post'
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - customerNumber
+                        - ''
+                      -
+                        - username
+                        - ''
+                      -
+                        - password
+                        - ''
+                      -
+                        - useTestEndpoint
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - colissimo
+            -
+              __assoc__:
+                -
+                  - name
+                  - Colissimo
+                -
+                  - enabled
+                  - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - g
+                -
+                  - dimensionUnit
+                  - mm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - dhlExpress
+            -
+              __assoc__:
+                -
+                  - name
+                  - 'DHL Express'
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - username
+                        - ''
+                      -
+                        - password
+                        - ''
+                      -
+                        - account
+                        - ''
+                      -
+                        - useTestEndpoint
+                        - ''
+                      -
+                        - shipDate
+                        - ''
+                      -
+                        - shipTime
+                        -
+                          __assoc__:
+                            -
+                              - time
+                              - ''
+                            -
+                              - timezone
+                              - Europe/Dublin
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+          -
+            - fastway
+            -
+              __assoc__:
+                -
+                  - name
+                  - Fastway
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - apiKey
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - fedEx
+            -
+              __assoc__:
+                -
+                  - name
+                  - FedEx
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - accountNumber
+                        - ''
+                      -
+                        - meterNumber
+                        - ''
+                      -
+                        - key
+                        - ''
+                      -
+                        - password
+                        - ''
+                      -
+                        - useTestEndpoint
+                        - ''
+                      -
+                        - residentialAddress
+                        - ''
+                      -
+                        - includeInsurance
+                        - ''
+                      -
+                        - enableOneRate
+                        - ''
+                      -
+                        - enableFreight
+                        - ''
+                      -
+                        - freightAccountNumber
+                        - ''
+                      -
+                        - freightBillingStreetAddress
+                        - ''
+                      -
+                        - freightBillingStreetAddress2
+                        - ''
+                      -
+                        - freightBillingCity
+                        - ''
+                      -
+                        - freightBillingZipcode
+                        - ''
+                      -
+                        - freightBillingStateCode
+                        - ''
+                      -
+                        - freightBillingCountryCode
+                        - ''
+                      -
+                        - freightShipperStreetAddress
+                        - ''
+                      -
+                        - freightShipperStreetAddress2
+                        - ''
+                      -
+                        - freightShipperCity
+                        - ''
+                      -
+                        - freightShipperZipcode
+                        - ''
+                      -
+                        - freightShipperStateCode
+                        - ''
+                      -
+                        - freightShipperCountryCode
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - lb
+                -
+                  - dimensionUnit
+                  - in
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - interparcel
+            -
+              __assoc__:
+                -
+                  - name
+                  - Interparcel
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - apiKey
+                        - ''
+                      -
+                        - carriers
+                        - '*'
+                      -
+                        - serviceLevels
+                        - '*'
+                      -
+                        - pickupTypes
+                        - '*'
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+          -
+            - newZealandPost
+            -
+              __assoc__:
+                -
+                  - name
+                  - 'New Zealand Post'
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - clientId
+                        - ''
+                      -
+                        - clientSecret
+                        - ''
+                      -
+                        - siteCode
+                        - ''
+                      -
+                        - accountNumber
+                        - ''
+                      -
+                        - useTestEndpoint
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+          -
+            - pacejet
+            -
+              __assoc__:
+                -
+                  - name
+                  - Pacejet
+                -
+                  - enabled
+                  - '1'
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - apiUrl
+                        - 'https://api.pacejet.cc'
+                      -
+                        - username
+                        - Fireclay
+                      -
+                        - licenseId
+                        - 9737b779-a071-980d-754a-d91d4a58bb63
+                      -
+                        - licenseKey
+                        - 24490d41-ad0a-bc81-0479-02564c39d5ec
+                      -
+                        - upsLicenseId
+                        - 6a59faa9-187b-2f78-7f35-046358b4be26
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - g
+                -
+                  - dimensionUnit
+                  - in
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - boxSizes
+                  - ''
+                -
+                  - restrictServices
+                  - '1'
+                -
+                  - services
+                  -
+                    __assoc__:
+                      -
+                        - FIRECLAY_TILE_NATIONWIDE
+                        -
+                          __assoc__:
+                            -
+                              - name
+                              - 'Fireclay Tile Nationwide'
+                            -
+                              - enabled
+                              - '1'
+                            -
+                              - handle
+                              - FIRECLAY_TILE_NATIONWIDE
+                            -
+                              - shippingCategories
+                              -
+                                1:
+                                  __assoc__:
+                                    -
+                                      - condition
+                                      - allow
+          -
+            - postNl
+            -
+              __assoc__:
+                -
+                  - name
+                  - PostNL
+                -
+                  - enabled
+                  - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - g
+                -
+                  - dimensionUnit
+                  - mm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - royalMail
+            -
+              __assoc__:
+                -
+                  - name
+                  - 'Royal Mail'
+                -
+                  - enabled
+                  - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - g
+                -
+                  - dimensionUnit
+                  - mm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - sendle
+            -
+              __assoc__:
+                -
+                  - name
+                  - Sendle
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - sendleId
+                        - ''
+                      -
+                        - apiKey
+                        - ''
+                      -
+                        - useSandbox
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+          -
+            - tntAustralia
+            -
+              __assoc__:
+                -
+                  - name
+                  - 'TNT Australia'
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - accountNumber
+                        - ''
+                      -
+                        - username
+                        - ''
+                      -
+                        - password
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - kg
+                -
+                  - dimensionUnit
+                  - cm
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - ups
+            -
+              __assoc__:
+                -
+                  - name
+                  - UPS
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - apiKey
+                        - ''
+                      -
+                        - testApiKey
+                        - ''
+                      -
+                        - username
+                        - ''
+                      -
+                        - password
+                        - ''
+                      -
+                        - accountNumber
+                        - ''
+                      -
+                        - negotiatedRates
+                        - ''
+                      -
+                        - requireSignature
+                        - ''
+                      -
+                        - pickupType
+                        - '01'
+                      -
+                        - residentialAddress
+                        - ''
+                      -
+                        - includeInsurance
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - lb
+                -
+                  - dimensionUnit
+                  - in
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+          -
+            - usps
+            -
+              __assoc__:
+                -
+                  - name
+                  - USPS
+                -
+                  - enabled
+                  - ''
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - username
+                        - ''
+                -
+                  - markUpRate
+                  - ''
+                -
+                  - markUpBase
+                  - percentage
+                -
+                  - weightUnit
+                  - lb
+                -
+                  - dimensionUnit
+                  - in
+                -
+                  - packingMethod
+                  - singleBox
+                -
+                  - restrictServices
+                  - '1'
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: pro
   live: true

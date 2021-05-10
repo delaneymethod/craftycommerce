@@ -1,5 +1,5 @@
 fieldLayouts:
-  23431a48-5df9-4861-8603-be8539c746bd:
+  9299a2a6-8782-4c63-8d11-abc1d246c04c:
     tabs:
       -
         elements:
@@ -28,13 +28,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: userPhotos
-hasUrls: false
-name: 'User Photos'
+handle: coffeeBeans
+hasUrls: true
+name: 'Coffee Beans'
 settings:
-  path: '@userPhotos'
+  path: '@coffeeBeans'
 sortOrder: 0
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
-url: ''
+url: '@coffeeBeans'

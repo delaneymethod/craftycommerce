@@ -1,0 +1,140 @@
+descriptionFormat: ''
+handle: coffeeBeans
+hasDimensions: true
+hasProductTitleField: true
+hasVariantTitleField: true
+hasVariants: true
+name: 'Coffee Beans'
+productFieldLayouts:
+  b933db35-45ba-40e3-8b49-9a342f1e7f9b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 83d49260-3d46-43bb-8cbe-e7fc607521e3 # Subtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bcaee5e5-777d-46f5-8f9e-d3b0bc327023 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e59589de-cf68-450b-9d7c-a57576c03f36 # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bc53f3ae-7f78-4a16-8f0c-c5ea0d1601e9 # Details
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ffb8da00-0959-432f-a50b-43f6945b21e9 # FAQs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7b3a7bb8-b058-4c20-99f4-0f7466643a2b # Tips
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\commerce\fieldlayoutelements\VariantsField
+            warning: null
+        name: Variants
+        sortOrder: 2
+productTitleFormat: ''
+siteSettings:
+  b34dff01-1c91-4de4-ab83-84610f1405d7: # Crafty Commerce
+    hasUrls: false
+    template: null
+    uriFormat: null
+skuFormat: ''
+titleFormat: '{product.title}'
+variantFieldLayouts:
+  2bc9a1f3-39fc-4651-97d9-6f6f3aff06d0:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\commerce\fieldlayoutelements\VariantTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1

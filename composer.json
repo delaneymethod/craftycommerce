@@ -1,8 +1,10 @@
 {
   "require": {
+    "ext-json": "^7.4",
     "craftcms/cms": "^3.6.4",
-    "craftcms/commerce": "3.3.1",
-    "craftcms/feed-me": "^4.2.3",
+    "craftcms/commerce": "3.3.1.1",
+    "craftcms/redactor": "2.8.7",
+    "solspace/fireclaytile-pacejet": "^1.0",
     "verbb/postie": "2.4.7",
     "vlucas/phpdotenv": "^3.4.0"
   },
@@ -22,5 +24,13 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ]
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "path",
+      "url": "plugins/fireclaytile-pacejet"
+    }
+  ]
 }

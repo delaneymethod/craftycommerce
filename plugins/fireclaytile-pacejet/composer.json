@@ -1,0 +1,41 @@
+{
+    "name": "solspace/fireclaytile-pacejet",
+    "description": "Pacejet provider for Postie",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "pacejet"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Solspace",
+            "homepage": "https://solspace.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "solspace\\fireclaytilepacejet\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Fireclay Tile Pacejet",
+        "handle": "fireclaytile-pacejet",
+        "developer": "Solspace",
+        "developerUrl": "https://solspace.com",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "class": "solspace\\fireclaytilepacejet\\FireclaytilePacejet"
+    }
+}

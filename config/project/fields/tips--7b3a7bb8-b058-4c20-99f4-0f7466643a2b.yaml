@@ -1,8 +1,8 @@
 contentColumnType: text
 fieldGroup: dc6067a3-8215-4a33-b6d8-31779af4ec62 # Coffee Beans
-handle: body
+handle: tips
 instructions: ''
-name: Body
+name: Tips
 searchable: true
 settings:
   availableTransforms: '*'

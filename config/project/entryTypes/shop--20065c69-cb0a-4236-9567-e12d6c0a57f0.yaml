@@ -1,12 +1,5 @@
-descriptionFormat: ''
-handle: clothing
-hasDimensions: true
-hasProductTitleField: true
-hasVariantTitleField: true
-hasVariants: false
-name: Clothing
-productFieldLayouts:
-  8fcbfde9-51b1-460b-91da-3038b1719b2e:
+fieldLayouts:
+  64848e87-1cc7-47b2-b57d-9054a17a345b:
     tabs:
       -
         elements:
@@ -30,16 +23,25 @@ productFieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\commerce\fieldlayoutelements\ProductTitleField
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: e59589de-cf68-450b-9d7c-a57576c03f36 # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
-productTitleFormat: ''
-siteSettings:
-  b34dff01-1c91-4de4-ab83-84610f1405d7: # Crafty Commerce
-    hasUrls: true
-    template: shop/products/_product
-    uriFormat: 'shop/products/{slug}'
-skuFormat: ''
-titleFormat: '{product.title}'
+handle: shop
+hasTitleField: true
+name: Shop
+section: 2f130d4b-a32c-4454-b17c-3c51d76eafa0 # Shop
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
