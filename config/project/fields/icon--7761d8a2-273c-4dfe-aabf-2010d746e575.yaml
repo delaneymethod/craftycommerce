@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: dc6067a3-8215-4a33-b6d8-31779af4ec62 # Coffee Beans
+handle: icon
+instructions: ''
+name: Icon
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:02ed504c-cde3-42e3-aac1-21bf0137e8d8' # User Photos
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:02ed504c-cde3-42e3-aac1-21bf0137e8d8' # User Photos
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets
