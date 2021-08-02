@@ -1,4 +1,4 @@
-dateModified: 1620403655
+dateModified: 1627909648
 email:
   fromEmail: hello@delaneymethod.com
   fromName: 'Crafty Commerce'
@@ -7,12 +7,40 @@ email:
   transportSettings:
     command: ''
   transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1a5780ca-d8db-4b31-8c76-c8d74fa795f2: 'Image Caption' # Image Caption
+    02ed504c-cde3-42e3-aac1-21bf0137e8d8: 'User Photos' # User Photos
+    2f130d4b-a32c-4454-b17c-3c51d76eafa0: Shop # Shop
+    4bb837ed-696a-465c-ae5e-a52ed850b2e3: Image # Image
+    6e9b5300-92d3-4834-941f-84a2e2b40904: 'Coffee Beans' # Coffee Beans
+    7b3a7bb8-b058-4c20-99f4-0f7466643a2b: Tips # Tips
+    8c86b286-218c-4a63-ba91-14d33ceb7cda: 'Tip Content' # Tip Content
+    83d49260-3d46-43bb-8cbe-e7fc607521e3: Subtitle # Subtitle
+    354b2ad6-6ee8-4ad8-a988-713dc66ba2aa: Homepage # Homepage
+    505ef66e-760d-40e4-88d3-12d22a49764f: Dummy # Dummy
+    7675e13b-31b4-40d1-8025-a37fd35fb97f: 'Crafty Commerce' # Crafty Commerce
+    7761d8a2-273c-4dfe-aabf-2010d746e575: Icon # Icon
+    20065c69-cb0a-4236-9567-e12d6c0a57f0: Shop # Shop
+    ae1f295a-8164-4b75-b727-e7c2d20e5d02: Ingredients # Ingredients
+    b03a2cff-e3e4-4c3a-b6a6-c3e8c781c2ee: 'Steps Title' # Steps Title
+    b34dff01-1c91-4de4-ab83-84610f1405d7: 'Crafty Commerce' # Crafty Commerce
+    bc53f3ae-7f78-4a16-8f0c-c5ea0d1601e9: Details # Details
+    bcaee5e5-777d-46f5-8f9e-d3b0bc327023: Image # Image
+    c2e9164b-0569-4750-bd97-fef5ffa5ca27: New # New
+    d70d6cbe-3a4a-4e56-9b2e-805217072249: Homepage # Homepage
+    dc6067a3-8215-4a33-b6d8-31779af4ec62: 'Coffee Beans' # Coffee Beans
+    e2a289f9-4e7a-4b22-b722-afe735c924c2: 'Steps Content' # Steps Content
+    e722e0c1-3237-4702-a8af-806f537ed297: 'Coffee Beans' # Coffee Beans
+    e59589de-cf68-450b-9d7c-a57576c03f36: Body # Body
+    fe75e466-7678-407d-ad47-a73ce2ca3bbb: 'Body Content' # Body Content
+    ffb8da00-0959-432f-a50b-43f6945b21e9: FAQs # FAQs
 plugins:
   commerce:
     edition: pro
     enabled: true
     licenseKey: D5RZVHK3FHLQCSDIC9NYHMRZ
-    schemaVersion: 3.3.2
+    schemaVersion: 3.4.11
     settings:
       activeCartDuration: 3600
       allowCheckoutWithoutPayment: false
@@ -49,10 +77,6 @@ plugins:
       validateBusinessTaxIdAsVatId: false
       validateCartCustomFieldsOnSubmission: false
       weightUnits: g
-  fireclaytile-pacejet:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   postie:
     edition: standard
     enabled: true
@@ -487,81 +511,6 @@ plugins:
                   - packingMethod
                   - singleBox
           -
-            - pacejet
-            -
-              __assoc__:
-                -
-                  - name
-                  - Pacejet
-                -
-                  - enabled
-                  - '1'
-                -
-                  - settings
-                  -
-                    __assoc__:
-                      -
-                        - apiUrl
-                        - 'https://api.pacejet.cc'
-                      -
-                        - username
-                        - Fireclay
-                      -
-                        - licenseId
-                        - 9737b779-a071-980d-754a-d91d4a58bb63
-                      -
-                        - licenseKey
-                        - 24490d41-ad0a-bc81-0479-02564c39d5ec
-                      -
-                        - upsLicenseId
-                        - 6a59faa9-187b-2f78-7f35-046358b4be26
-                -
-                  - markUpRate
-                  - ''
-                -
-                  - markUpBase
-                  - percentage
-                -
-                  - weightUnit
-                  - g
-                -
-                  - dimensionUnit
-                  - in
-                -
-                  - packingMethod
-                  - singleBox
-                -
-                  - boxSizes
-                  - ''
-                -
-                  - restrictServices
-                  - '1'
-                -
-                  - services
-                  -
-                    __assoc__:
-                      -
-                        - FIRECLAY_TILE_NATIONWIDE
-                        -
-                          __assoc__:
-                            -
-                              - name
-                              - 'Fireclay Tile Nationwide'
-                            -
-                              - enabled
-                              - '1'
-                            -
-                              - handle
-                              - FIRECLAY_TILE_NATIONWIDE
-                            -
-                              - shippingCategories
-                              -
-                                1:
-                                  __assoc__:
-                                    -
-                                      - condition
-                                      - allow
-          -
             - postNl
             -
               __assoc__:
@@ -802,7 +751,7 @@ system:
   live: true
   name: 'Crafty Commerce'
   retryDuration: null
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.7
   timeZone: Europe/Dublin
 users:
   allowPublicRegistration: false

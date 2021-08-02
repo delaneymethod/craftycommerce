@@ -2,10 +2,9 @@
   "require": {
     "ext-json": "^7.4",
     "craftcms/cms": "^3.6.4",
-    "craftcms/commerce": "3.3.1.1",
-    "craftcms/redactor": "2.8.7",
-    "solspace/fireclaytile-pacejet": "^1.0",
-    "verbb/postie": "2.4.7",
+    "craftcms/commerce": "3.4.1",
+    "craftcms/redactor": "2.8.8",
+    "verbb/postie": "2.4.8",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {
@@ -26,11 +25,5 @@
     ]
   },
   "minimum-stability": "dev",
-  "prefer-stable": true,
-  "repositories": [
-    {
-      "type": "path",
-      "url": "plugins/fireclaytile-pacejet"
-    }
-  ]
+  "prefer-stable": true
 }
