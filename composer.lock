@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5e29a19fa406b6b4576c453891a5e3e",
+    "content-hash": "73b20daa97638fd187cdce27f5703688",
     "packages": [
         {
             "name": "cakephp/core",
@@ -1124,6 +1124,64 @@
                 "html"
             ],
             "time": "2020-06-29T00:56:53+00:00"
+        },
+        {
+            "name": "fireclaytile/pacejet",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:fireclaytile/pacejet.git",
+                "reference": "866de8a1621a28d7309be1ad362de81f4bf145d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fireclaytile/pacejet/zipball/866de8a1621a28d7309be1ad362de81f4bf145d3",
+                "reference": "866de8a1621a28d7309be1ad362de81f4bf145d3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "default-branch": true,
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Pacejet",
+                "handle": "pacejet",
+                "developer": "Solspace",
+                "developerUrl": "https://solspace.com",
+                "class": "fireclaytile\\pacejet\\Pacejet"
+            },
+            "autoload": {
+                "psr-4": {
+                    "fireclaytile\\pacejet\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Solspace",
+                    "homepage": "https://solspace.com"
+                }
+            ],
+            "description": "Commerce shipping provider for Postie",
+            "keywords": [
+                "cms",
+                "commerce",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "pacejet",
+                "postie",
+                "provider",
+                "solspace"
+            ],
+            "support": {
+                "source": "https://github.com/fireclaytile/pacejet/tree/master",
+                "issues": "https://github.com/fireclaytile/pacejet/issues"
+            },
+            "time": "2021-08-02T14:17:40+00:00"
         },
         {
             "name": "gabrielbull/ups-api",
@@ -4948,7 +5006,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "fireclaytile/pacejet": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
