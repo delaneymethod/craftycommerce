@@ -1131,12 +1131,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:fireclaytile/pacejet.git",
-                "reference": "866de8a1621a28d7309be1ad362de81f4bf145d3"
+                "reference": "8cadc3a383334e7b708217bf35095b8a40f49c82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fireclaytile/pacejet/zipball/866de8a1621a28d7309be1ad362de81f4bf145d3",
-                "reference": "866de8a1621a28d7309be1ad362de81f4bf145d3",
+                "url": "https://api.github.com/repos/fireclaytile/pacejet/zipball/8cadc3a383334e7b708217bf35095b8a40f49c82",
+                "reference": "8cadc3a383334e7b708217bf35095b8a40f49c82",
                 "shasum": ""
             },
             "require": {
@@ -1181,7 +1181,7 @@
                 "source": "https://github.com/fireclaytile/pacejet/tree/master",
                 "issues": "https://github.com/fireclaytile/pacejet/issues"
             },
-            "time": "2021-08-02T14:17:40+00:00"
+            "time": "2021-08-02T15:11:56+00:00"
         },
         {
             "name": "gabrielbull/ups-api",

@@ -1,4 +1,4 @@
-dateModified: 1627909648
+dateModified: 1627914466
 email:
   fromEmail: hello@delaneymethod.com
   fromName: 'Crafty Commerce'
@@ -77,6 +77,10 @@ plugins:
       validateBusinessTaxIdAsVatId: false
       validateCartCustomFieldsOnSubmission: false
       weightUnits: g
+  pacejet:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   postie:
     edition: standard
     enabled: true
